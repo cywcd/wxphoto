@@ -1,0 +1,30 @@
+<!--piclisst.wxml-->
+<loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+</loading>
+<swiper class="swipebox" indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{topswipe}}">  
+        <swiper-item>  
+           <navigator hover-class="navigator-hover">  
+            <image src="{{item.thumb}}" class="slide-image" width="355" height="150"/> 
+            <text class="slide-txt">{{item.title}}</text> 
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper> 
+<view class="container news-list">
+  <block wx:for="{{picitem}}">
+    <view class="news-item" data-title="{{item.title}}" data-url="{{item.url}}" bindtap="bindViewTap">
+      <image src="{{item.thumb}}" mode="aspectFill" class="list-image"/>
+      <view class="news-text">
+        <text class="news-title">{{item.title}}</text>
+        <view class="news-stamp">
+          <text>{{item.copyfrom}}</text>
+          <text>{{item.inputtime}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+

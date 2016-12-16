@@ -1,0 +1,40 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  width:100%;
+  color: #333; display:inline-block;  
+}
+.indexwelcome{
+  padding:50rpx 0;
+  border-top:2rpx solid #ddd;
+}
+.usermotto {
+  margin-top: 50rpx;
+}
+.user-title{width:100%; height:32rpx; line-height:32rpx;}
+.indexbox{
+  padding:15rpx 0;
+}
+.userinfo-l{width:50%; display:inline-block; text-align:center;}
+.userinfo-r{width:50%; display:inline-block;}
+.userinfo-w{width:100%;}
+.userinfo-mt{margin-top:10rpx;}
+.userinfo-mb{margin-bottom:10rpx;}
+.btn-area{margin-bottom:500rpx;}
+.itembox{margin-top:20rpx; width:100%; border-top:2rpx solid #ddd;}
+.item-title{padding:20rpx 10rpx; margin:0 30rpx; box-sizing:border-box; border-bottom:2rpx solid #ddd; display:inline-block; display: flex;
+  flex-direction: row;}
+.item-txt{height:50rpx; line-height:50rpx;}
+.item-icon{width: 50rpx; height: 50rpx; display:inline-block; vertical-align:middle; position:absolute; right:20rpx;}

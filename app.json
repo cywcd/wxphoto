@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/splash/splash",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/piclib/piclib",
+    "pages/piclib-detail/piclib-detail",
+    "pages/piclist/piclist",
+    "pages/picshow/picshow",
+    "pages/about/about",
+    "pages/map/map"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eb4f38",
+    "navigationBarTitleText": "摄影家园",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {  
+   "color": "#fff",  
+   "selectedColor": "#eb4f38",  
+   "borderStyle":"white", 
+   "backgroundColor":"#000", 
+   "list": [{  
+     "selectedIconPath": "resource/images/icon-home-active.png",  
+     "iconPath": "resource/images/icon-home.png",  
+     "pagePath": "pages/index/index",  
+     "text": "首页"  
+   }, {  
+     "selectedIconPath": "resource/images/icon-pic-active.png",  
+     "iconPath": "resource/images/icon-pic.png",  
+     "pagePath": "pages/piclist/piclist",  
+     "text": "图库"  
+   }, {  
+     "selectedIconPath": "resource/images/icon-logs-active.png",  
+     "iconPath": "resource/images/icon-logs.png",  
+     "pagePath": "pages/logs/logs",  
+     "text": "日志"  
+   }, {  
+     "selectedIconPath": "resource/images/icon-about-active.png",  
+     "iconPath": "resource/images/icon-about.png",  
+     "pagePath": "pages/about/about",  
+     "text": "关注"  
+   }]  
+ }, 
+ "networkTimeout": {
+    "request": 3000,
+    "downloadFile": 3000
+  },
+  "debug": true
+}

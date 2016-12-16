@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container indexbox">
+  <view  bindtap="bindViewTap" class="userinfo-w">
+    <view class="userinfo-l">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="userinfo-r userinfo-mt">
+      <view class="userinfo-w userinfo-mb">姓别:
+        <text wx:if="{{userInfo.gender == 1}}">男</text>
+        <text wx:elif="{{userInfo.gender == 2}}">女</text>
+        <text wx:else>未知</text>
+      </view>
+      <view class="userinfo-w">所在地：{{userInfo.province + '-' + userInfo.city}}</view>
+    </view>
+  </view>
+  <view class="userinfo-w center usermotto indexwelcome">
+    <text class="blue">{{userInfo.nickName}}</text><text>{{welcome}}</text>
+  </view>
+  <view class="itembox">
+    <block wx:for="{{items}}">
+        <navigator url="{{item.link}}" class="item-title flex-pack-justify">
+            <text class="item-txt">{{item.title}}</text>
+            <image class="item-icon" mode="{{item.mode}}" src="{{imgsrc}}" />
+        </navigator>
+    </block>
+  </view>
+  <view bindtap="bindmapTap" class="mt50" >
+       <navigator src="{{userInfo.province}}" class="user-title">
+       <button type="warn"> {{maptitle}} </button>
+        </navigator>
+  </view>
+</view>
+
+

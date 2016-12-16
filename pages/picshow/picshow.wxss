@@ -1,0 +1,5 @@
+.article-title{width:100%; padding:10rpx 0 20rpx; border-bottom:2rpx solid #ccc;}
+.article-h1{width:100%;font-weight:bold; font-size:20px; line-height:1.6; text-align:center;}
+.article-h2{width:100%; font-size:12px; line-height:1.5; color:#ccc;}
+.article-main{width:100%; box-sizing:border-box; padding:0 20rpx; margin-top:50rpx; font-size:14px; line-height:1.5; color:#666;}
+

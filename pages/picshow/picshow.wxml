@@ -1,0 +1,10 @@
+<view class="w">
+    <view class="article-title">
+        <view class="article-h1">{{articleTitle}}</view>
+        <view class="article-h2 mlr20">
+            <text>来源：{{articleFrom}}</text>
+            <text class="ml20">作者：{{articleAuthor}}</text>
+        </view>
+    </view>
+    <view class="article-main">{{articleMain}}</view>
+</view>

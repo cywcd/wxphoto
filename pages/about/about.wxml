@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="section-title">{{title}}</view>
+    <view class="section-ctn">
+        <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{mode}}" src="{{thumUrl}}"></image>
+    </view>
+    <view class="section-desc center">{{desc}}</view>
+</view>
