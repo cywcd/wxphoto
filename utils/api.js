@@ -1,5 +1,5 @@
 'use strict';
-
+import Promise from 'es6-promise.min';
 module.exports = {
   PAGE_WORK: '/pages/piclib-detail/piclib-detail',
 
@@ -14,7 +14,7 @@ module.exports = {
   SIGN_UP: 'http://ios1.artand.cn/signup/sms',
   LOGIN: 'http://ios1.artand.cn/login/doLogin',
   GET_VERIFICATION: 'http://ios1.artand.cn/signup/sms',
-
+  
   get (url) {
     return new Promise((resolve, reject) => {
       wx.request({
